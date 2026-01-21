@@ -26,13 +26,13 @@ export function CodeBlock({
   return (
     <div
       className={twMerge(
-        'relative rounded-lg border border-zinc-700 overflow-x-auto',
+        'relative rounded-lg border border-zinc-700 overflow-hidden',
         className,
       )}
       {...props}
     >
       <div
-        className="[&_pre]:p-4 [&_pre]:text-sm [&_pre]:font-mono [&_pre]:leading-relaxed"
+        className="mac-scroll overflow-x-auto overflow-y-auto max-h-[600px] [&_pre]:p-4 [&_pre]:m-0 [&_pre]:text-sm [&_pre]:font-mono [&_pre]:leading-relaxed [&_code]:whitespace-pre-wrap [&_code]:break-words"
         dangerouslySetInnerHTML={{ __html: parsedCode }}
       />
     </div>

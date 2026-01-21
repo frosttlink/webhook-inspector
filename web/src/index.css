@@ -57,3 +57,9 @@
 .mac-scroll::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.35);
 }
+
+/* Code block improvements */
+[&_code]:whitespace-pre-wrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
